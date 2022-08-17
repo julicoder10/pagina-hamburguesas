@@ -1,0 +1,55 @@
+footer {
+    height: auto;
+    background-color: #000;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    .top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+
+        .icon {
+            font-size: 2rem;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+            justify-content: center;
+
+            span {
+                text-transform: uppercase;
+                cursor: pointer;
+                color:#b3b3b3;
+
+                &:hover {
+                    color: lightgray;
+                }
+            }
+        }
+    }
+
+    .medium {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        span {
+            color: #fff;
+        }
+    }
+
+    .bottom {
+        padding: 2rem;
+        text-align: center;
+        color: #333;
+    }
+}

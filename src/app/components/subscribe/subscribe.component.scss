@@ -1,0 +1,55 @@
+section{
+    display:flex;
+    background: rgba(0,0,0,.4) url('../../../assets/8-min.jpg');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    height:60vh;
+    padding:2rem;
+
+    .left{
+        width:50%;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:1rem;
+
+        h2{
+            color:#fff;
+            text-transform:uppercase;
+            font-size:3rem;
+
+            span{
+                color:orange;
+            }
+        }
+
+        form{
+            display:flex;
+            flex-direction: row;
+            gap:2rem;
+            justify-content: center;
+            align-items: center;
+            align-self: flex-start;
+
+            input{
+                background:transparent;
+                padding:1rem 2rem;
+                width:250px;
+                border:1px solid #fff;
+                outline: none;
+                color:#333;
+            }
+    
+            button{
+                padding:1rem 2rem;
+                background:transparent;
+                color:#fff;
+                border: 2px solid #fff;
+                cursor:pointer;
+            }
+        }
+    }
+}

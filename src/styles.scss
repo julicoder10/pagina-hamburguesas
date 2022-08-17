@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    transition: .3s all ease-in-out;
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #000;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #FF8008;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFC837, #ff7b00);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFC837, #FF8008);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border-radius: 5rem;
+    }
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+p {
+    font-size: 1.4rem;
+}
+
+
+@media screen and (max-width:400px){
+    html{
+        font-size: 50%;
+
+        img{
+            width:60%;
+        }
+    }
+}

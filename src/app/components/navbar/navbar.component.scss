@@ -1,0 +1,95 @@
+// header{
+//     padding:1.5rem 6rem;
+//     display:flex;
+//     justify-content:space-between;
+//     align-items: center;
+//     position:absolute;
+//     background-color: rgba(0,0,0,.7);
+//     top:0;
+//     right:0; left:0;
+//     width:100%;
+//     z-index: 10;
+
+//     nav{
+//         display:flex;
+//         align-items: center;
+//         gap:2rem;
+
+//         a{
+//             text-transform: capitalize;
+//             color:#fff;
+//             letter-spacing: 2px;
+//             padding-bottom:.5rem;
+//             box-sizing: border-box;
+//             font-size:1.5rem;
+//             text-decoration:none;
+
+//             &:hover{
+//                 color:#eec634;
+//             }
+//         }
+//     }
+
+//     .hire-me{
+//         color:orange;
+//         border:2px solid orange;
+//         background:transparent;
+//         padding:1rem 2rem;
+//         cursor:pointer;
+//         text-decoration:none;
+//     }
+// }
+
+
+// @media screen and (max-width:768px){
+//     header{
+//         padding: 1rem 2rem;
+
+//         nav{
+             
+//             a{
+//                 font-size:1.2rem;
+//             }
+//         }
+//     }
+// }
+
+nav{
+    top:0;
+    right:0; left:0;
+    padding:1.5rem 6rem;
+    position:fixed;
+    z-index:9999;
+    background:rgba(0,0,0,.8);
+    display:flex;
+
+    div{
+
+        .navbar-brand{
+            color:#fff;
+            font-size:1.8rem;
+        }
+
+        .navbar-toggler{
+            color:#fff;
+            border:none;
+            outline:none;
+            font-size:1.8rem;
+        }
+
+        ul{
+            li{
+
+                a{
+                    color:#fff;
+                    font-size:1.3rem;
+                    text-transform: capitalize;
+
+                    &:hover{
+                        color:orange;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+<section>
+    <div class="left">
+      <img src="assets/4-min.jpg">
+    </div>
+    <div class="right">
+        <ngb-carousel class="carousel">
+            <ng-template ngbSlide *ngFor="let review of reviews" class="wrapper-container">
+              <div class="wrapper">
+                <h2>reviews</h2>
+                <fa-icon [icon]="faQuoteLeft" class="icon"></fa-icon>
+                <p>{{ review.short }}</p>
+                <h3>{{ review.name }}</h3>
+              </div>
+            </ng-template>
+          </ngb-carousel>
+    </div>
+</section>
